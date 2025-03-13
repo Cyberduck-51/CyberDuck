@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions | CyberDuck Art Commissions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace with your actual Google Analytics ID
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CyberDuck</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="commissions.html" class="active">Commissions</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Commission Header -->
+    <section class="commission-header">
+        <div class="container">
+            <h2>Commission Your Custom Artwork</h2>
+            <p>Let me bring your ideas and characters to life!</p>
+        </div>
+    </section>
+
+    <!-- Commission Process -->
+    <section>
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Request</h3>
+                    <p>Fill out the order form with your commission details and references.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Review & Payment</h3>
+                    <p>I'll review your request and email you with payment instructions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Creation Process</h3>
+                    <p>Once payment is received, I'll begin working on your commission.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Updates & Delivery</h3>
+                    <p>You'll receive progress updates and the final artwork when completed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commission Tiers -->
+    <section>
+        <div class="container">
+            <h2>Commission Packages</h2>
+            <div class="tiers-grid">
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="img/p6.jpg" alt="Sketch Commission">
+                    </div>
+                    <div class="tier-details">
+                        <h3>✏️ Sketch</h3>
+                        <p class="price">€12</p>
+                        <p class="availability">1 slot available</p>
+                        <p class="timeframe">7 days turnaround</p>
+                        <p>Clean lineart with basic shading</p>
+                        <ul class="tier-features">
+                            <li>Single character</li>
+                            <li>Simple background</li>
+                            <li>Black and white</li>
+                            <li>Digital file delivery</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="img/p7.jpg" alt="Full Color Commission">
+                    </div>
+                    <div class="tier-details">
+                        <h3>🎨 traditional A4</h3>
+                        <p class="price">€36-45</p>
+                        <p class="availability">1 slot available</p>
+                        <p class="timeframe">7 days turnaround</p>
+                        <p>Fully rendered illustration with details</p>
+                        <ul class="tier-features">
+                            <li>Single character (additional characters +€15 each)</li>
+                            <li>Detailed background options</li>
+                            <li>High-resolution digital file</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="img/p4.jpg" alt="Chibi Commission">
+                    </div>
+                    <div class="tier-details">
+                        <h3>🖌️ Chibi Style</h3>
+                        <p class="price">€2-7</p>
+                        <p class="availability">2 slots available</p>
+                        <p class="timeframe">3 days turnaround</p>
+                        <p>Cute stylized character illustrations</p>
+                        <ul class="tier-features">
+                            <li>Adorable chibi style</li>
+                            <li>Simple coloring</li>
+                            <li>Quick turnaround</li>
+                            <li>Perfect for profile pictures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commission Form -->
+    <section class="commission-form">
+        <div class="container">
+            <h2>Order Form</h2>
+            <p>Fill out the form below to request a commission. I'll review your request and contact you via email with payment details.</p>
+            
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <p class="form-hint">I'll use this to contact you about your commission.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="commissionType">Commission Type *</label>
+                    <select id="commissionType" name="commissionType" required>
+                        <option value="">Select a commission type</option>
+                        <option value="sketch">Sketch (€12)</option>
+                        <option value="full-color">Full Color (€36-45)</option>
+                        <option value="chibi">Chibi Style (€2-7)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="references">Reference Images</label>
+                    <input type="file" id="references" name="references" multiple>
+                    <p class="form-hint">Upload reference images for your character(s). Max 5 files.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Commission Details *</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                    <p class="form-hint">Please describe what you'd like me to draw in detail.</p>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                    <label for="termsAgree">I have read and agree to the <a href="terms.html" target="_blank">Terms of Service</a> *</label>
+                </div>
+                
+                <div class="center-btn">
+                    <button type="submit" class="btn primary">Submit Request</button>
+                </div>
+            </form>
+            
+            <!-- Success Message (Hidden by default) -->
+            <div id="successMessage" style="display: none;" class="terms-card">
+                <h3>Thank you for your request!</h3>
+                <p>I'll review your order and email you soon with payment details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CyberDuck</h2>
+                    <p>Custom art commissions for your characters and ideas.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="commissions.html">Commissions</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/cyber_duck51" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-palette"></i></a>
+                        <a href="mailto:contact@cyberduck.art"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CyberDuck Art. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
